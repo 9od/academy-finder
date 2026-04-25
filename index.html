@@ -325,8 +325,9 @@
     <div class="sidebar-section">
       <div class="section-title">지역</div>
       <select id="sigunSel">
+        <option value="경기도">경기도 전체</option>
         <option value="용인시">용인시 전체</option>
-        <option value="용인시 수지구" selected>수지구</option>
+        <option value="용인시 수지구" selected>용인시 수지구</option>
       </select>
     </div>
 
@@ -436,7 +437,7 @@ async function doSearch() {
 
   // 선택된 과목 키워드 → 여러 번 호출 or 전체 받아서 클라이언트 필터
   // 공공데이터 API는 과목 파라미터가 없으므로 전체 받아서 필터링
-  const url = `https://openapi.gg.go.kr/TninsttInstutM?KEY=${encodeURIComponent(key)}&Type=json&pIndex=1&pSize=${pSize}&SIGUN_NM=${encodeURIComponent(sigun)}`;
+  const url = `https://openapi.gg.go.kr/TninsttInstutM?KEY=${encodeURIComponent(key)}&Type=json&pIndex=1&pSize=${pSize}`;
 
   try {
     const res = await fetch(url);
@@ -478,14 +479,27 @@ function applyFilter() {
   const keywords = getSubjectKeywords();
   const nameQ = document.getElementById('nameFilter').value.trim().toLowerCase();
 
+  const sigunVal = document.getElementById('sigunSel').value;
+
   filtered = allRows.filter(r => {
+    // 시군 필터 (클라이언트 사이드)
+    const sigunNm = r.SIGUN_NM || '';
+    const addr = r.REFINE_ROADNM_ADDR || r.REFINE_LOTNO_ADDR || '';
+    if (sigunVal === '용인시 수지구') {
+      if (!sigunNm.includes('용인')) return false;
+      if (!addr.includes('수지')) return false;
+    } else if (sigunVal === '용인시') {
+      if (!sigunNm.includes('용인')) return false;
+    }
+    // 경기도 전체는 필터 없음
+
     // 학원명 필터
-    const nm = (r.INSTUT_NM || r.학원명 || '').toLowerCase();
+    const nm = (r.FACLT_NM || '').toLowerCase();
     if (nameQ && !nm.includes(nameQ)) return false;
 
     // 과목 필터 (선택된 과목이 없으면 전체)
     if (keywords.length === 0) return true;
-    const cours = (r.COURS_REALM_NM || r.COURS_NM || r.교습과목 || '').toLowerCase();
+    const cours = (r.CRSE_CLASS_NM || '').toLowerCase();
     return keywords.some(k => cours.includes(k.toLowerCase()));
   });
 
@@ -513,13 +527,13 @@ function renderResults() {
   }
 
   const cards = pageData.map(r => {
-    // 필드명은 API 응답에 따라 자동 대응
-    const name   = r.INSTUT_NM    || r.학원명    || '학원명 없음';
-    const cours  = r.COURS_REALM_NM || r.COURS_NM || r.교습과목 || '';
-    const addr   = r.INSTUT_ADRES || r.주소      || '';
-    const tel    = r.TELNO        || r.전화번호  || '';
-    const cap    = r.TOTNSTDT_CO  || '';  // 정원
-    const sinceY = (r.FONDTN_YMD  || r.설립일   || '').slice(0, 4);
+    const name   = r.FACLT_NM || '학원명 없음';
+    const cours  = r.CRSE_CLASS_NM || '';
+    const addr   = r.REFINE_ROADNM_ADDR || r.REFINE_LOTNO_ADDR || '';
+    const tel    = r.TELNO || '';
+    const dong   = r.EMD_NM || '';
+    const cap    = '';
+    const sinceY = '';
 
     const [label, cls] = subjectBadge(cours);
 
@@ -534,8 +548,8 @@ function renderResults() {
       ${tel   ? `<div class="card-row"><span class="card-icon">📞</span><span class="card-text">${tel}</span></div>` : ''}
       <hr class="card-divider" />
       <div class="card-footer">
-        ${sinceY ? `<span class="tag">${sinceY}년 개원</span>` : ''}
-        ${cap    ? `<span class="tag">정원 ${cap}명</span>`   : ''}
+        ${dong ? `<span class="tag">📍 ${dong}</span>` : ''}
+        ${r.SIGUN_NM ? `<span class="tag">${r.SIGUN_NM}</span>` : ''}
       </div>
     </div>`;
   }).join('');
