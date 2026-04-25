@@ -8,304 +8,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --teal: #1D9E75;
-      --teal-light: #E1F5EE;
-      --teal-dark: #0F6E56;
-      --bg: #f8f7f4;
-      --surface: #ffffff;
-      --border: #e8e6e0;
-      --border-hover: #c8c6c0;
-      --text-primary: #1a1a18;
-      --text-secondary: #6b6a66;
-      --text-muted: #9b9a96;
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 16px;
+      --teal: #1D9E75; --teal-dark: #0F6E56;
+      --bg: #f8f7f4; --surface: #ffffff;
+      --border: #e8e6e0; --border-hover: #c8c6c0;
+      --text-primary: #1a1a18; --text-secondary: #6b6a66; --text-muted: #9b9a96;
+      --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Pretendard', -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      min-height: 100vh;
-    }
-
-    /* ── Header ── */
-    header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--teal);
-    }
-    header h1 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text-primary);
-    }
-    header span {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-left: 4px;
-    }
-
-    /* ── Layout ── */
-    .layout {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px 24px;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-    @media (max-width: 720px) {
-      .layout { grid-template-columns: 1fr; padding: 16px; }
-    }
-
-    /* ── Sidebar ── */
-    .sidebar {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 20px;
-      position: sticky;
-      top: 72px;
-    }
+    body { font-family: 'Pretendard', -apple-system, sans-serif; background: var(--bg); color: var(--text-primary); min-height: 100vh; }
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; height: 56px; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 100; }
+    .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+    header h1 { font-size: 15px; font-weight: 600; }
+    header span { font-size: 13px; color: var(--text-muted); margin-left: 4px; }
+    .layout { max-width: 1100px; margin: 0 auto; padding: 28px 24px; display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: start; }
+    @media (max-width: 720px) { .layout { grid-template-columns: 1fr; padding: 16px; } }
+    .sidebar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; position: sticky; top: 72px; }
     .sidebar-section { margin-bottom: 20px; }
     .sidebar-section:last-child { margin-bottom: 0; }
-    .section-title {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
-
-    /* API Key input */
-    .key-input-wrap { position: relative; }
-    .key-input-wrap input {
-      width: 100%;
-      padding: 8px 36px 8px 10px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      font-size: 12px;
-      font-family: monospace;
-      color: var(--text-secondary);
-      background: var(--bg);
-      outline: none;
-      transition: border-color 0.15s;
-    }
-    .key-input-wrap input:focus { border-color: var(--teal); }
-    .key-toggle {
-      position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
-      background: none; border: none; cursor: pointer;
-      font-size: 14px; color: var(--text-muted);
-      padding: 0; line-height: 1;
-    }
-    .key-note {
-      font-size: 11px; color: var(--text-muted); margin-top: 5px; line-height: 1.5;
-    }
-
-    /* Chips */
+    .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 10px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-    .chip {
-      cursor: pointer;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text-secondary);
-      transition: all 0.12s;
-      user-select: none;
-    }
+    .chip { cursor: pointer; padding: 5px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text-secondary); transition: all 0.12s; user-select: none; }
     .chip:hover { border-color: var(--teal); color: var(--teal); }
     .chip.on { background: var(--teal); border-color: var(--teal); color: #fff; }
-
-    /* Select */
-    select {
-      width: 100%;
-      padding: 8px 10px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      font-size: 13px;
-      font-family: 'Pretendard', sans-serif;
-      color: var(--text-primary);
-      background: var(--bg);
-      outline: none;
-      cursor: pointer;
-      transition: border-color 0.15s;
-    }
-    select:focus { border-color: var(--teal); }
-
-    /* Search button */
-    .search-btn {
-      width: 100%;
-      padding: 11px;
-      background: var(--teal);
-      color: #fff;
-      border: none;
-      border-radius: var(--radius-sm);
-      font-size: 14px;
-      font-weight: 600;
-      font-family: 'Pretendard', sans-serif;
-      cursor: pointer;
-      transition: background 0.15s, opacity 0.15s;
-      margin-top: 4px;
-    }
+    select { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: 'Pretendard', sans-serif; color: var(--text-primary); background: var(--bg); outline: none; cursor: pointer; }
+    .search-btn { width: 100%; padding: 11px; background: var(--teal); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600; font-family: 'Pretendard', sans-serif; cursor: pointer; transition: background 0.15s; margin-top: 4px; }
     .search-btn:hover { background: var(--teal-dark); }
-    .search-btn:disabled { opacity: 0.45; cursor: not-allowed; }
-
-    /* ── Main panel ── */
     .main { min-height: 400px; }
-
-    /* Stats bar */
-    .stats-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      min-height: 28px;
-    }
+    .stats-bar { display: flex; align-items: center; margin-bottom: 16px; min-height: 28px; gap: 12px; }
     .stats-text { font-size: 13px; color: var(--text-secondary); }
     .stats-text strong { color: var(--text-primary); }
-    .sort-select {
-      width: auto;
-      padding: 5px 10px;
-      font-size: 12px;
-    }
-
-    /* Search bar */
-    .search-bar {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .search-bar input {
-      flex: 1;
-      padding: 9px 14px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      font-size: 14px;
-      font-family: 'Pretendard', sans-serif;
-      background: var(--surface);
-      outline: none;
-      transition: border-color 0.15s;
-    }
+    .updated-text { font-size: 11px; color: var(--text-muted); }
+    .search-bar { margin-bottom: 16px; }
+    .search-bar input { width: 100%; padding: 9px 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; font-family: 'Pretendard', sans-serif; background: var(--surface); outline: none; transition: border-color 0.15s; }
     .search-bar input:focus { border-color: var(--teal); }
-
-    /* Cards grid */
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 16px;
-      transition: border-color 0.15s, transform 0.1s;
-      cursor: default;
-    }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px; transition: border-color 0.15s, transform 0.1s; }
     .card:hover { border-color: var(--border-hover); transform: translateY(-1px); }
-
     .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px; }
     .card-name { font-size: 14px; font-weight: 600; color: var(--text-primary); line-height: 1.4; }
-    .subject-badge {
-      font-size: 11px; padding: 3px 9px; border-radius: 10px;
-      white-space: nowrap; flex-shrink: 0; font-weight: 500;
-    }
-
+    .subject-badge { font-size: 11px; padding: 3px 9px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; font-weight: 500; }
     .card-row { display: flex; gap: 6px; align-items: flex-start; margin-bottom: 6px; }
     .card-icon { font-size: 13px; flex-shrink: 0; margin-top: 1px; }
     .card-text { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
-
     .card-divider { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
-
     .card-footer { display: flex; gap: 6px; flex-wrap: wrap; }
-    .tag {
-      font-size: 11px; color: var(--text-muted);
-      background: var(--bg); padding: 2px 8px;
-      border-radius: 6px; border: 1px solid var(--border);
-    }
-
-    /* Subject badge colors */
+    .tag { font-size: 11px; color: var(--text-muted); background: var(--bg); padding: 2px 8px; border-radius: 6px; border: 1px solid var(--border); }
     .s-eng   { background: #E1F5EE; color: #0F6E56; }
     .s-math  { background: #E6F1FB; color: #185FA5; }
     .s-art   { background: #FAEEDA; color: #854F0B; }
     .s-music { background: #FBEAF0; color: #993556; }
     .s-sports{ background: #FAECE7; color: #993C1D; }
     .s-etc   { background: #F1EFE8; color: #5F5E5A; }
-
-    /* Status states */
-    .state-box {
-      display: flex; flex-direction: column; align-items: center;
-      justify-content: center; padding: 60px 20px; gap: 12px;
-      color: var(--text-muted); text-align: center;
-    }
+    .state-box { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; gap: 12px; color: var(--text-muted); text-align: center; }
     .state-box .icon { font-size: 36px; }
     .state-box p { font-size: 14px; line-height: 1.6; }
-
-    .spinner {
-      width: 28px; height: 28px;
-      border: 3px solid var(--border);
-      border-top-color: var(--teal);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
+    .spinner { width: 28px; height: 28px; border: 3px solid var(--border); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    .error-box {
-      padding: 14px 16px;
-      background: #fef2f2; border: 1px solid #fecaca;
-      border-radius: var(--radius-sm); font-size: 13px; color: #b91c1c;
-    }
-
-    /* Pagination */
+    .error-box { padding: 14px 16px; background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-sm); font-size: 13px; color: #b91c1c; line-height: 1.6; }
     .pagination { display: flex; gap: 6px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
-    .page-btn {
-      padding: 6px 12px; border: 1px solid var(--border);
-      border-radius: var(--radius-sm); font-size: 13px; cursor: pointer;
-      background: var(--surface); color: var(--text-secondary);
-      font-family: 'Pretendard', sans-serif; transition: all 0.12s;
-    }
+    .page-btn { padding: 6px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; cursor: pointer; background: var(--surface); color: var(--text-secondary); font-family: 'Pretendard', sans-serif; transition: all 0.12s; }
     .page-btn:hover { border-color: var(--teal); color: var(--teal); }
     .page-btn.active { background: var(--teal); border-color: var(--teal); color: #fff; }
-    .page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
   </style>
 </head>
 <body>
-
 <header>
   <div class="logo-dot"></div>
   <h1>수지구 학원 찾기</h1>
   <span>경기도 공공데이터 기반</span>
 </header>
-
 <div class="layout">
-
-  <!-- ── Sidebar ── -->
   <aside class="sidebar">
-
-    <div class="sidebar-section">
-      <div class="section-title">API 인증키</div>
-      <div class="key-input-wrap">
-        <input type="password" id="apiKey" placeholder="발급받은 인증키 입력" autocomplete="off" />
-        <button class="key-toggle" onclick="toggleKey()">👁</button>
-      </div>
-      <div class="key-note">키는 브라우저에만 저장됩니다.<br>GitHub에 업로드되지 않습니다.</div>
-    </div>
-
     <div class="sidebar-section">
       <div class="section-title">교습 과목</div>
       <div class="chips" id="subjectChips">
@@ -321,200 +94,119 @@
         <div class="chip" data-v="체육">체육</div>
       </div>
     </div>
-
     <div class="sidebar-section">
       <div class="section-title">지역</div>
-      <select id="sigunSel">
-        <option value="경기도">경기도 전체</option>
+      <select id="sigunSel" onchange="applyFilter()">
         <option value="용인시">용인시 전체</option>
-        <option value="용인시 수지구" selected>용인시 수지구</option>
+        <option value="수지구" selected>용인시 수지구</option>
       </select>
     </div>
-
-    <div class="sidebar-section">
-      <div class="section-title">결과 수</div>
-      <select id="pageSizeSel">
-        <option value="30">30개</option>
-        <option value="50" selected>50개</option>
-        <option value="100">100개</option>
-      </select>
-    </div>
-
-    <button class="search-btn" id="searchBtn" onclick="doSearch()">검색하기</button>
-
+    <button class="search-btn" onclick="applyFilter()">검색하기</button>
   </aside>
-
-  <!-- ── Main ── -->
   <main class="main">
-
     <div class="search-bar">
-      <input type="text" id="nameFilter" placeholder="학원명으로 필터링..." oninput="applyFilter()" />
+      <input type="text" id="nameFilter" placeholder="학원명으로 직접 검색..." oninput="applyFilter()" />
     </div>
-
     <div class="stats-bar">
       <div class="stats-text" id="statsText"></div>
+      <div class="updated-text" id="updatedText"></div>
     </div>
-
     <div id="content">
-      <div class="state-box">
-        <div class="icon">🏫</div>
-        <p>과목과 지역을 선택하고<br>검색 버튼을 누르세요.</p>
-      </div>
+      <div class="state-box"><div class="spinner"></div><p>데이터 불러오는 중...</p></div>
     </div>
-
     <div class="pagination" id="paginationArea"></div>
-
   </main>
 </div>
-
 <script>
-// ── State ──
 let allRows = [];
-let filtered = [];
 let currentPage = 1;
 const PER_PAGE = 20;
 
-// ── API Key 저장/불러오기 ──
-window.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('gg_api_key');
-  if (saved) document.getElementById('apiKey').value = saved;
-
-  document.querySelectorAll('#subjectChips .chip').forEach(c => {
-    c.addEventListener('click', () => c.classList.toggle('on'));
-  });
-});
-
-function toggleKey() {
-  const inp = document.getElementById('apiKey');
-  inp.type = inp.type === 'password' ? 'text' : 'password';
-}
-
-// ── 과목 → 공공데이터 키워드 매핑 ──
 const SUBJECT_MAP = {
-  '영어': ['영어', '영어회화', '영어독해', '외국어'],
-  '수학': ['수학', '수학전문'],
-  '미술': ['미술', '미술전문'],
-  '음악': ['음악', '피아노', '악기'],
-  '태권도': ['태권도', '무도'],
-  '수영': ['수영', '스포츠'],
-  '코딩': ['컴퓨터', '코딩', '로봇'],
-  '독서': ['독서', '논술', '글쓰기'],
-  '과학': ['과학'],
-  '체육': ['체육', '스포츠', '무도'],
+  '영어': ['영어', 'english', '잉글', '어학'],
+  '수학': ['수학', 'math', '매쓰'],
+  '미술': ['미술', '아트', '그림', '드로잉'],
+  '음악': ['음악', '피아노', '바이올린', '첼로', '플루트'],
+  '태권도': ['태권도'],
+  '수영': ['수영'],
+  '코딩': ['코딩', '로봇', '컴퓨터', 'sw', '소프트웨어'],
+  '독서': ['독서', '논술', '글쓰기', '국어'],
+  '과학': ['과학', '사이언스'],
+  '체육': ['체육', '스포츠', '축구', '농구', '발레', '댄스'],
 };
 
-function getSubjectKeywords() {
-  const on = [...document.querySelectorAll('#subjectChips .chip.on')].map(c => c.dataset.v);
-  if (!on.length) return [];
-  const kws = new Set();
-  on.forEach(s => (SUBJECT_MAP[s] || [s]).forEach(k => kws.add(k)));
-  return [...kws];
+function subjectBadge(name) {
+  const t = (name || '').toLowerCase();
+  if (/영어|english|잉글|어학/.test(t))           return ['영어', 's-eng'];
+  if (/수학|math|매쓰/.test(t))                   return ['수학', 's-math'];
+  if (/미술|아트|그림/.test(t))                    return ['미술', 's-art'];
+  if (/음악|피아노|바이올린|첼로|플루트/.test(t))   return ['음악', 's-music'];
+  if (/태권도|수영|체육|스포츠|축구|댄스|발레/.test(t)) return ['체육·스포츠', 's-sports'];
+  if (/코딩|로봇|컴퓨터|소프트/.test(t))            return ['코딩', 's-math'];
+  if (/과학|사이언스/.test(t))                     return ['과학', 's-etc'];
+  if (/독서|논술|국어|글쓰기/.test(t))              return ['독서·국어', 's-etc'];
+  return ['기타', 's-etc'];
 }
 
-function subjectBadge(coursNm) {
-  const t = coursNm || '';
-  if (/영어|외국어/.test(t)) return ['영어', 's-eng'];
-  if (/수학/.test(t))        return ['수학', 's-math'];
-  if (/미술/.test(t))        return ['미술', 's-art'];
-  if (/음악|피아노|악기/.test(t)) return ['음악', 's-music'];
-  if (/태권도|무도|체육|수영|스포츠/.test(t)) return ['체육·스포츠', 's-sports'];
-  return [t || '기타', 's-etc'];
-}
+// 페이지 로드 시 data.json 읽기
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#subjectChips .chip').forEach(c => {
+    c.addEventListener('click', () => { c.classList.toggle('on'); applyFilter(); });
+  });
+  loadData();
+});
 
-// ── 검색 ──
-async function doSearch() {
-  const key = document.getElementById('apiKey').value.trim();
-  if (!key) { showError('API 인증키를 입력해주세요.'); return; }
-  localStorage.setItem('gg_api_key', key);
-
-  const sigun = document.getElementById('sigunSel').value;
-  const pSize = document.getElementById('pageSizeSel').value;
-
-  setLoading(true);
-  document.getElementById('paginationArea').innerHTML = '';
-  document.getElementById('statsText').textContent = '';
-  allRows = [];
-
-  // 선택된 과목 키워드 → 여러 번 호출 or 전체 받아서 클라이언트 필터
-  // 공공데이터 API는 과목 파라미터가 없으므로 전체 받아서 필터링
-  const url = `https://openapi.gg.go.kr/TninsttInstutM?KEY=${encodeURIComponent(key)}&Type=json&pIndex=1&pSize=${pSize}`;
-
+async function loadData() {
   try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
+    const res = await fetch('data.json?t=' + Date.now());
+    if (!res.ok) throw new Error('data.json을 찾을 수 없습니다.');
+    allRows = await res.json();
 
-    // 경기도 API 응답 구조 파싱
-    const wrapper = json['TninsttInstutM'];
-    if (!wrapper) throw new Error('응답 형식이 예상과 다릅니다. 인증키를 확인해주세요.');
-
-    const head = wrapper[0]?.head;
-    const resultCode = head?.[1]?.RESULT?.CODE;
-    if (resultCode && resultCode !== 'INFO-000') {
-      throw new Error(head[1].RESULT.MESSAGE || '데이터 조회 실패');
+    // 업데이트 시각 표시 (Last-Modified 헤더)
+    const lastMod = res.headers.get('Last-Modified');
+    if (lastMod) {
+      const d = new Date(lastMod);
+      document.getElementById('updatedText').textContent =
+        `최종 업데이트: ${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
     }
-
-    const rows = wrapper[1]?.row || [];
-    allRows = rows;
-
-    // 콘솔에 필드명 확인용 출력 (첫 1개)
-    if (rows.length > 0) console.log('API 응답 샘플:', rows[0]);
 
     applyFilter();
-    setLoading(false);
-
   } catch (e) {
-    setLoading(false);
-    // CORS 에러 처리
-    if (e.message.includes('Failed to fetch') || e.message.includes('CORS')) {
-      showError('CORS 오류: 브라우저에서 직접 호출이 차단되었습니다.\n아래 README의 프록시 설정을 확인하세요.');
-    } else {
-      showError('오류: ' + e.message);
-    }
+    document.getElementById('content').innerHTML = `
+      <div class="error-box">
+        데이터 파일(data.json)을 불러올 수 없습니다.<br>
+        GitHub Actions가 아직 실행되지 않았을 수 있습니다.<br>
+        repo → Actions 탭 → "학원 데이터 수집" → Run workflow 버튼을 눌러주세요.
+      </div>`;
   }
 }
 
-// ── 클라이언트 필터링 ──
 function applyFilter() {
-  const keywords = getSubjectKeywords();
-  const nameQ = document.getElementById('nameFilter').value.trim().toLowerCase();
+  const on = [...document.querySelectorAll('#subjectChips .chip.on')].map(c => c.dataset.v);
+  const keywords = [];
+  on.forEach(s => (SUBJECT_MAP[s] || [s]).forEach(k => keywords.push(k)));
 
+  const nameQ = document.getElementById('nameFilter').value.trim().toLowerCase();
   const sigunVal = document.getElementById('sigunSel').value;
 
-  filtered = allRows.filter(r => {
-    // 시군 필터 (클라이언트 사이드)
-    const sigunNm = r.SIGUN_NM || '';
+  const filtered = allRows.filter(r => {
     const addr = r.REFINE_ROADNM_ADDR || r.REFINE_LOTNO_ADDR || '';
-    if (sigunVal === '용인시 수지구') {
-      if (!sigunNm.includes('용인')) return false;
-      if (!addr.includes('수지')) return false;
-    } else if (sigunVal === '용인시') {
-      if (!sigunNm.includes('용인')) return false;
-    }
-    // 경기도 전체는 필터 없음
+    if (sigunVal === '수지구' && !addr.includes('수지')) return false;
 
-    // 학원명 필터
     const nm = (r.FACLT_NM || '').toLowerCase();
     if (nameQ && !nm.includes(nameQ)) return false;
-
-    // 과목 필터 (선택된 과목이 없으면 전체)
     if (keywords.length === 0) return true;
-    const cours = (r.CRSE_CLASS_NM || '').toLowerCase();
-    return keywords.some(k => cours.includes(k.toLowerCase()));
+    return keywords.some(k => nm.includes(k.toLowerCase()));
   });
 
   currentPage = 1;
-  renderResults();
+  renderResults(filtered);
 }
 
-// ── 렌더링 ──
-function renderResults() {
+function renderResults(filtered) {
   const total = filtered.length;
-  const start = (currentPage - 1) * PER_PAGE;
-  const pageData = filtered.slice(start, start + PER_PAGE);
-
   document.getElementById('statsText').innerHTML =
-    total > 0 ? `<strong>${total.toLocaleString()}개</strong> 학원 검색됨` : '';
+    total > 0 ? `<strong>${total.toLocaleString()}개</strong> 학원` : '';
 
   if (total === 0) {
     document.getElementById('content').innerHTML = `
@@ -526,19 +218,17 @@ function renderResults() {
     return;
   }
 
+  const start = (currentPage - 1) * PER_PAGE;
+  const pageData = filtered.slice(start, start + PER_PAGE);
+
   const cards = pageData.map(r => {
-    const name   = r.FACLT_NM || '학원명 없음';
-    const cours  = r.CRSE_CLASS_NM || '';
-    const addr   = r.REFINE_ROADNM_ADDR || r.REFINE_LOTNO_ADDR || '';
-    const tel    = r.TELNO || '';
-    const dong   = r.EMD_NM || '';
-    const cap    = '';
-    const sinceY = '';
-
-    const [label, cls] = subjectBadge(cours);
-
-    return `
-    <div class="card">
+    const name  = r.FACLT_NM || '학원명 없음';
+    const cours = r.CRSE_CLASS_NM || '';
+    const addr  = r.REFINE_ROADNM_ADDR || r.REFINE_LOTNO_ADDR || '';
+    const tel   = r.TELNO || '';
+    const dong  = r.EMD_NM || '';
+    const [label, cls] = subjectBadge(name);
+    return `<div class="card">
       <div class="card-header">
         <div class="card-name">${name}</div>
         <span class="subject-badge ${cls}">${label}</span>
@@ -548,45 +238,31 @@ function renderResults() {
       ${tel   ? `<div class="card-row"><span class="card-icon">📞</span><span class="card-text">${tel}</span></div>` : ''}
       <hr class="card-divider" />
       <div class="card-footer">
-        ${dong ? `<span class="tag">📍 ${dong}</span>` : ''}
+        ${dong ? `<span class="tag">${dong}</span>` : ''}
         ${r.SIGUN_NM ? `<span class="tag">${r.SIGUN_NM}</span>` : ''}
       </div>
     </div>`;
   }).join('');
 
   document.getElementById('content').innerHTML = `<div class="cards">${cards}</div>`;
-  renderPagination(total);
-}
 
-function renderPagination(total) {
+  // 페이지네이션
   const totalPages = Math.ceil(total / PER_PAGE);
   if (totalPages <= 1) { document.getElementById('paginationArea').innerHTML = ''; return; }
-
   let html = '';
   for (let i = 1; i <= totalPages; i++) {
-    html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
+    html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goPage(${i}, event)">${i}</button>`;
   }
   document.getElementById('paginationArea').innerHTML = html;
+
+  // filtered를 goPage에서 쓰기 위해 저장
+  window._filtered = filtered;
 }
 
-function goPage(p) {
+function goPage(p, e) {
   currentPage = p;
-  renderResults();
+  renderResults(window._filtered);
   window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// ── UI 유틸 ──
-function setLoading(on) {
-  document.getElementById('searchBtn').disabled = on;
-  if (on) {
-    document.getElementById('content').innerHTML = `
-      <div class="state-box"><div class="spinner"></div><p>데이터를 불러오는 중...</p></div>`;
-  }
-}
-
-function showError(msg) {
-  document.getElementById('content').innerHTML =
-    `<div class="error-box">${msg.replace(/\n/g, '<br>')}</div>`;
 }
 </script>
 </body>

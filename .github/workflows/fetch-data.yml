@@ -1,0 +1,82 @@
+name: 학원 데이터 수집
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 오전 9시(KST)
+  workflow_dispatch:      # 수동 실행 버튼
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 경기도 API에서 데이터 수집
+        env:
+          GG_API_KEY: ${{ secrets.GG_API_KEY }}
+        run: |
+          python3 << 'EOF'
+          import urllib.request
+          import json
+          import os
+
+          KEY = os.environ['GG_API_KEY']
+          PAGE_SIZE = 1000
+          MAX_PAGES = 15
+          TARGET_COUNT = 300  # 용인시 데이터 목표 수집량
+
+          all_rows = []
+
+          for page in range(1, MAX_PAGES + 1):
+              url = f"https://openapi.gg.go.kr/TninsttInstutM?KEY={KEY}&Type=json&pIndex={page}&pSize={PAGE_SIZE}"
+              print(f"페이지 {page} 호출 중...")
+
+              with urllib.request.urlopen(url, timeout=30) as res:
+                  data = json.loads(res.read().decode('utf-8'))
+
+              wrapper = data.get('TninsttInstutM')
+              if not wrapper:
+                  print("응답 없음, 종료")
+                  break
+
+              result_code = wrapper[0].get('head', [{}])[1].get('RESULT', {}).get('CODE', '')
+              if result_code and result_code != 'INFO-000':
+                  print(f"API 오류: {result_code}")
+                  break
+
+              rows = wrapper[1].get('row', []) if len(wrapper) > 1 else []
+              if not rows:
+                  print("데이터 없음, 종료")
+                  break
+
+              all_rows.extend(rows)
+
+              yongin_count = sum(1 for r in all_rows if '용인' in (r.get('SIGUN_NM') or ''))
+              print(f"  총 {len(all_rows)}개 수집, 용인시 {yongin_count}개")
+
+              if yongin_count >= TARGET_COUNT:
+                  print(f"용인시 {yongin_count}개 확보 완료")
+                  break
+
+              total = wrapper[0].get('head', [{}])[0].get('list_total_count', 0)
+              if page * PAGE_SIZE >= total:
+                  break
+
+          # 용인시만 필터링해서 저장
+          yongin_rows = [r for r in all_rows if '용인' in (r.get('SIGUN_NM') or '')]
+          print(f"\n최종 용인시 학원 수: {len(yongin_rows)}개")
+
+          with open('data.json', 'w', encoding='utf-8') as f:
+              json.dump(yongin_rows, f, ensure_ascii=False, indent=2)
+
+          print("data.json 저장 완료")
+          EOF
+
+      - name: data.json 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "데이터 업데이트: $(date '+%Y-%m-%d')"
+          git push
