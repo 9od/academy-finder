@@ -8,6 +8,8 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -69,6 +71,11 @@ jobs:
 
               all_rows.extend(rows)
 
+              # 첫 페이지에서 실제 SIGUN_NM 값 샘플 출력
+              if page == 1:
+                  sigun_values = list(set(r.get('SIGUN_NM', '') for r in rows[:50]))
+                  print(f"  SIGUN_NM 샘플값: {sigun_values[:10]}")
+
               yongin_count = sum(1 for r in all_rows if '용인' in (r.get('SIGUN_NM') or ''))
               print(f"  총 {len(all_rows)}개 수집, 용인시 {yongin_count}개")
 
@@ -83,8 +90,12 @@ jobs:
 
               time.sleep(1)
 
+          # SIGUN_NM 전체 고유값 출력 (디버깅)
+          all_sigun = list(set(r.get('SIGUN_NM', '') for r in all_rows))
+          print(f"\n전체 SIGUN_NM 고유값: {sorted(all_sigun)}")
+
           yongin_rows = [r for r in all_rows if '용인' in (r.get('SIGUN_NM') or '')]
-          print(f"\n최종 용인시 학원 수: {len(yongin_rows)}개")
+          print(f"최종 용인시 학원 수: {len(yongin_rows)}개")
 
           with open('data.json', 'w', encoding='utf-8') as f:
               json.dump(yongin_rows, f, ensure_ascii=False, indent=2)
