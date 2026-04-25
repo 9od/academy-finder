@@ -14,7 +14,7 @@
     header h1{font-size:15px;font-weight:600}
     header span{font-size:13px;color:var(--t3);margin-left:4px}
     .layout{max-width:1100px;margin:0 auto;padding:28px 24px;display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:start}
-    @media(max-width:720px){.layout{grid-template-columns:1fr;padding:16px}}
+    @media(max-width:720px){.layout{grid-template-columns:1fr;padding:16px}.sidebar{position:static;top:auto}.sidebar-toggle{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:2px 0}.sidebar-toggle h2{font-size:13px;font-weight:600;color:var(--t1)}.sidebar-toggle .arrow{font-size:11px;color:var(--t3);transition:transform .2s}.sidebar-toggle.open .arrow{transform:rotate(180deg)}.sidebar-body{display:none;margin-top:16px}.sidebar-body.open{display:block}}@media(min-width:721px){.sidebar-toggle{display:none}.sidebar-body{display:block !important}}
     .sidebar{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px;position:sticky;top:72px}
     .sec{margin-bottom:20px}
     .sec:last-child{margin-bottom:0}
@@ -77,6 +77,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar">
+    <div class="sidebar-toggle" onclick="toggleSidebar(this)">
+      <h2>🔍 검색 필터</h2>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="sidebar-body">
     <div class="sec">
       <div class="sec-title">교습 계열</div>
       <div class="chips" id="realmChips">
@@ -122,6 +127,7 @@
       </select>
     </div>
     <button class="btn" onclick="applyFilter()">검색하기</button>
+    </div>
   </aside>
   <main class="main">
     <div class="searchbar">
@@ -333,6 +339,11 @@ function render() {
   document.getElementById('pages').innerHTML = Array.from({length: totalPages}, (_,i) =>
     `<button class="pg${i+1===currentPage?' on':''}" onclick="goPage(${i+1})">${i+1}</button>`
   ).join('');
+}
+
+function toggleSidebar(el) {
+  el.classList.toggle('open');
+  document.querySelector('.sidebar-body').classList.toggle('open');
 }
 
 function goPage(p) {
