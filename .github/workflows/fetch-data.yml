@@ -17,93 +17,101 @@ jobs:
       - name: requests 설치
         run: pip install requests
 
-      - name: 경기도 API에서 데이터 수집
+      - name: NEIS 수집 + 카카오 지오코딩
         env:
-          GG_API_KEY: ${{ secrets.GG_API_KEY }}
+          NEIS_API_KEY: ${{ secrets.NEIS_API_KEY }}
+          KAKAO_API_KEY: ${{ secrets.KAKAO_API_KEY }}
         run: |
           python3 << 'PYEOF'
-          import requests
-          import json
-          import os
-          import time
+          import requests, json, os, time
 
-          KEY = os.environ['GG_API_KEY']
+          NEIS_KEY  = os.environ['NEIS_API_KEY']
+          KAKAO_KEY = os.environ['KAKAO_API_KEY']
+
+          # ── 1. NEIS에서 용인시 학원 전체 수집 ──
+          BASE = "https://open.neis.go.kr/hub/acaInsTiInfo"
           PAGE_SIZE = 1000
-          MAX_PAGES = 20
-          TARGET_COUNT = 300
+          all_rows, page = [], 1
 
-          all_rows = []
-          session = requests.Session()
-          session.headers.update({'Accept-Encoding': 'identity'})
-
-          for page in range(1, MAX_PAGES + 1):
-              url = "https://openapi.gg.go.kr/TninsttInstutM"
-              params = {'KEY': KEY, 'Type': 'json', 'pIndex': page, 'pSize': PAGE_SIZE}
-              print(f"페이지 {page} 호출 중...")
-
+          while True:
+              params = {
+                  'KEY': NEIS_KEY, 'Type': 'json',
+                  'pIndex': page, 'pSize': PAGE_SIZE,
+                  'ATPT_OFCDC_SC_CODE': 'J10',
+                  'ADMST_ZONE_NM': '용인시',
+              }
+              print(f"NEIS 페이지 {page} 호출 중...")
               for attempt in range(3):
                   try:
-                      res = session.get(url, params=params, timeout=60)
-                      res.raise_for_status()
+                      res = requests.get(BASE, params=params, timeout=30)
                       data = res.json()
                       break
                   except Exception as e:
-                      print(f"  시도 {attempt+1} 실패: {e}")
-                      if attempt < 2:
-                          time.sleep(5)
-                      else:
-                          raise
+                      print(f"  재시도 {attempt+1}: {e}")
+                      time.sleep(3)
 
-              wrapper = data.get('TninsttInstutM')
-              if not wrapper:
-                  print("응답 없음, 종료")
-                  break
-
-              result_code = wrapper[0].get('head', [{}])[1].get('RESULT', {}).get('CODE', '')
-              if result_code and result_code != 'INFO-000':
-                  print(f"API 오류: {result_code}")
-                  break
-
+              wrapper = data.get('acaInsTiInfo', [])
+              if not wrapper: break
+              code = wrapper[0].get('head',[{}])[1].get('RESULT',{}).get('CODE','')
+              if code != 'INFO-000': break
               rows = wrapper[1].get('row', []) if len(wrapper) > 1 else []
-              if not rows:
-                  print("데이터 없음, 종료")
-                  break
-
+              if not rows: break
               all_rows.extend(rows)
-
-              # 첫 페이지에서 실제 SIGUN_NM 값 샘플 출력
-              if page == 1:
-                  sigun_values = list(set(r.get('SIGUN_NM', '') for r in rows[:50]))
-                  print(f"  SIGUN_NM 샘플값: {sigun_values[:10]}")
-
-              yongin_count = sum(1 for r in all_rows if '용인' in (r.get('SIGUN_NM') or ''))
-              print(f"  총 {len(all_rows)}개 수집, 용인시 {yongin_count}개")
-
-              if yongin_count >= TARGET_COUNT:
-                  print(f"용인시 {yongin_count}개 확보 완료")
-                  break
-
-              total = wrapper[0].get('head', [{}])[0].get('list_total_count', 0)
-              if page * PAGE_SIZE >= total:
-                  print("전체 데이터 수집 완료")
-                  break
-
+              total = wrapper[0].get('head',[{}])[0].get('list_total_count', 0)
+              print(f"  {len(all_rows)}/{total}개")
+              if len(all_rows) >= total or len(rows) < PAGE_SIZE: break
+              page += 1
               time.sleep(1)
 
-          # SIGUN_NM 전체 고유값 출력 (디버깅)
-          all_sigun = list(set(r.get('SIGUN_NM', '') for r in all_rows))
-          print(f"\n전체 SIGUN_NM 고유값: {sorted(all_sigun)}")
+          # 수지구 개원 중인 곳만
+          suji = [r for r in all_rows
+                  if r.get('REG_STTUS_NM') == '개원'
+                  and '수지구' in (r.get('FA_RDNMA') or '')]
+          print(f"\n수지구 개원 학원: {len(suji)}개")
 
-          yongin_rows = [r for r in all_rows if '용인' in (r.get('SIGUN_NM') or '')]
-          print(f"최종 용인시 학원 수: {len(yongin_rows)}개")
+          # ── 2. 카카오 지오코딩 ──
+          GEO_URL = "https://dapi.kakao.com/v2/local/search/address.json"
+          headers = {"Authorization": f"KakaoAK {KAKAO_KEY}"}
+
+          geo_cache = {}
+
+          def geocode(addr):
+              if not addr or addr in geo_cache:
+                  return geo_cache.get(addr)
+              try:
+                  r = requests.get(GEO_URL, headers=headers,
+                                   params={"query": addr}, timeout=10)
+                  docs = r.json().get('documents', [])
+                  if docs:
+                      result = {"lat": float(docs[0]['y']), "lng": float(docs[0]['x'])}
+                      geo_cache[addr] = result
+                      return result
+              except Exception as e:
+                  print(f"  지오코딩 실패 ({addr[:20]}): {e}")
+              geo_cache[addr] = None
+              return None
+
+          print("\n카카오 지오코딩 시작...")
+          for i, r in enumerate(suji):
+              addr = (r.get('FA_RDNMA') or '').strip()
+              if addr:
+                  coords = geocode(addr)
+                  if coords:
+                      r['LAT'] = coords['lat']
+                      r['LNG'] = coords['lng']
+              if (i+1) % 50 == 0:
+                  print(f"  {i+1}/{len(suji)} 완료")
+              time.sleep(0.05)  # API 부하 방지
+
+          geocoded = sum(1 for r in suji if r.get('LAT'))
+          print(f"좌표 확보: {geocoded}/{len(suji)}개")
 
           with open('data.json', 'w', encoding='utf-8') as f:
-              json.dump(yongin_rows, f, ensure_ascii=False, indent=2)
-
+              json.dump(suji, f, ensure_ascii=False, indent=2)
           print("data.json 저장 완료")
           PYEOF
 
-      - name: data.json 커밋 & 푸시
+      - name: 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
