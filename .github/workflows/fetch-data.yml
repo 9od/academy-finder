@@ -2,8 +2,8 @@ name: 학원 데이터 수집
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 오전 9시(KST)
-  workflow_dispatch:      # 수동 실행 버튼
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch:
@@ -12,28 +12,45 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: requests 설치
+        run: pip install requests
+
       - name: 경기도 API에서 데이터 수집
         env:
           GG_API_KEY: ${{ secrets.GG_API_KEY }}
         run: |
-          python3 << 'EOF'
-          import urllib.request
+          python3 << 'PYEOF'
+          import requests
           import json
           import os
+          import time
 
           KEY = os.environ['GG_API_KEY']
           PAGE_SIZE = 1000
-          MAX_PAGES = 15
-          TARGET_COUNT = 300  # 용인시 데이터 목표 수집량
+          MAX_PAGES = 20
+          TARGET_COUNT = 300
 
           all_rows = []
+          session = requests.Session()
+          session.headers.update({'Accept-Encoding': 'identity'})
 
           for page in range(1, MAX_PAGES + 1):
-              url = f"https://openapi.gg.go.kr/TninsttInstutM?KEY={KEY}&Type=json&pIndex={page}&pSize={PAGE_SIZE}"
+              url = "https://openapi.gg.go.kr/TninsttInstutM"
+              params = {'KEY': KEY, 'Type': 'json', 'pIndex': page, 'pSize': PAGE_SIZE}
               print(f"페이지 {page} 호출 중...")
 
-              with urllib.request.urlopen(url, timeout=30) as res:
-                  data = json.loads(res.read().decode('utf-8'))
+              for attempt in range(3):
+                  try:
+                      res = session.get(url, params=params, timeout=60)
+                      res.raise_for_status()
+                      data = res.json()
+                      break
+                  except Exception as e:
+                      print(f"  시도 {attempt+1} 실패: {e}")
+                      if attempt < 2:
+                          time.sleep(5)
+                      else:
+                          raise
 
               wrapper = data.get('TninsttInstutM')
               if not wrapper:
@@ -61,9 +78,11 @@ jobs:
 
               total = wrapper[0].get('head', [{}])[0].get('list_total_count', 0)
               if page * PAGE_SIZE >= total:
+                  print("전체 데이터 수집 완료")
                   break
 
-          # 용인시만 필터링해서 저장
+              time.sleep(1)
+
           yongin_rows = [r for r in all_rows if '용인' in (r.get('SIGUN_NM') or '')]
           print(f"\n최종 용인시 학원 수: {len(yongin_rows)}개")
 
@@ -71,7 +90,7 @@ jobs:
               json.dump(yongin_rows, f, ensure_ascii=False, indent=2)
 
           print("data.json 저장 완료")
-          EOF
+          PYEOF
 
       - name: data.json 커밋 & 푸시
         run: |
