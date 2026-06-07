@@ -31,6 +31,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000082084",
+    "ACA_NM": "1등급관리형독서국어교습소",
+    "ESTBL_YMD": "20260604",
+    "REG_YMD": "20260604",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 6,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 신봉2로 2",
+    "FA_RDNDA": "(신봉동), 센트럴500상가 308호",
+    "FA_RDNZC": "16815",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000054331",
     "ACA_NM": "A1잉글리시영어교습소",
     "ESTBL_YMD": "20230216",
@@ -322,33 +349,6 @@
     "FA_RDNZC": "16840",
     "FA_TELNO": null,
     "LOAD_DTM": "20250209"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "교습소",
-    "ACA_ASNUM": "3000031706",
-    "ACA_NM": "강한수학교습소",
-    "ESTBL_YMD": "20161223",
-    "REG_YMD": "20161223",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 30,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 6,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "수학초등01",
-    "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": "수학초등01:240000, 수학초등02:210000, 수학중등:310000",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 포은대로 298",
-    "FA_RDNDA": ", 103호 (상현동, 만현마을동보2차아파트)",
-    "FA_RDNZC": "16929",
-    "FA_TELNO": "null",
-    "LOAD_DTM": "20260201"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -1705,6 +1705,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000082002",
+    "ACA_NM": "대치탑클래스영어교습소",
+    "ESTBL_YMD": "20260521",
+    "REG_YMD": "20260521",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 8,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 광교중앙로 305",
+    "FA_RDNDA": "(상현동), 214호",
+    "FA_RDNZC": "16944",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "10729",
     "ACA_NM": "더(THE)예원피아노교습소",
     "ESTBL_YMD": "20000524",
@@ -1787,7 +1814,7 @@
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000050727",
-    "ACA_NM": "더드림음악교습소",
+    "ACA_NM": "더드림피아노교습소",
     "ESTBL_YMD": "20220405",
     "REG_YMD": "20220405",
     "REG_STTUS_NM": "개원",
@@ -1799,14 +1826,14 @@
     "LE_ORD_NM": "보통교과",
     "LE_CRSE_LIST_NM": "피아노(초급)1",
     "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": "피아노(초급)1:140000, 피아노(초급)2:150000, 피아노(중급)1:150000, 피아노(중급)2:160000, 피아노(고급)1:170000, 피아노(입시)1:100000, 피아노(입시)2:200000",
+    "PSNBY_THCC_CNTNT": "피아노(초급)1:140000, 피아노(초급)2:160000, 피아노(중급)1:150000, 피아노(중급)2:170000, 피아노(고급)1:180000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 성복1로 62",
     "FA_RDNDA": ", 104호 (성복동, KCC스위첸)",
     "FA_RDNZC": "16852",
-    "FA_TELNO": "null",
-    "LOAD_DTM": "20250202"
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -2751,7 +2778,7 @@
     "FA_RDNDA": "(죽전동) 203호",
     "FA_RDNZC": "16889",
     "FA_TELNO": null,
-    "LOAD_DTM": "20251012"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -2779,6 +2806,33 @@
     "FA_RDNZC": "16825",
     "FA_TELNO": null,
     "LOAD_DTM": "20231018"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000081947",
+    "ACA_NM": "로하국어논술교습소",
+    "ESTBL_YMD": "20260518",
+    "REG_YMD": "20260518",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 9,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 대지로 49",
+    "FA_RDNDA": "죽전퍼스트하임 상가동 203호(죽전동)",
+    "FA_RDNZC": "16872",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -3821,17 +3875,17 @@
     "TOFOR_SMTOT": 0,
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 9,
     "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": null,
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": null,
-    "PSNBY_THCC_CNTNT": " ",
+    "LE_ORD_NM": "보통교과",
+    "LE_CRSE_LIST_NM": "수학(초등저 1~4학년)",
+    "LE_CRSE_NM": "보습",
+    "PSNBY_THCC_CNTNT": "수학(초등저 1~4학년):215000, 수학(초등고 5~6학년):215000, 수학(중등):285000, 수학(특강1):100000, 수학(특강2):150000, 수학(특강3):200000, 수학중등:340000, 수학(특강4):300000, 수학초등:161000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": " ",
     "FA_RDNMA": "경기도 용인시 수지구 대지로 49",
     "FA_RDNDA": "(죽전동,죽전퍼스트하임), 상가동 302호",
     "FA_RDNZC": "16872",
     "FA_TELNO": null,
-    "LOAD_DTM": "20251130"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -3885,7 +3939,7 @@
     "FA_RDNDA": ", 203,204호 (신봉동,신봉마을 엘지빌리지5차)",
     "FA_RDNZC": "448150",
     "FA_TELNO": "031-263-1571",
-    "LOAD_DTM": "20250914"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -4748,33 +4802,6 @@
     "FA_RDNMA": "경기도 용인시 수지구 수지로 166",
     "FA_RDNDA": ", 정자뜰마을 태영데시앙 1차아파트 상가동 203호 (풍덕천동,정자뜰마을 태영 데시앙1차 아파트)",
     "FA_RDNZC": "448550",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "교습소",
-    "ACA_ASNUM": "3000040015",
-    "ACA_NM": "빛안아트스튜디오미술교습소",
-    "ESTBL_YMD": "20190318",
-    "REG_YMD": "20190318",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 24,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 8,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": "미술",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 동천로35번길 11",
-    "FA_RDNDA": ", 동천마을현대1차홈타운 상가동 203호 (동천동)",
-    "FA_RDNZC": "16826",
     "FA_TELNO": null,
     "LOAD_DTM": "20231018"
   },
@@ -6873,16 +6900,16 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 6,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "미술(초급)A",
-    "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": "미술(초급)A:92000, 미술(초급)B:58000, 미술(초급) 중급:100000, 미술(중급) 초급:60000, 미술:70000, 미술:100000, 미술:70000, 미술:100000",
+    "LE_CRSE_LIST_NM": "일반창의미술A",
+    "LE_CRSE_NM": "미술",
+    "PSNBY_THCC_CNTNT": "일반창의미술A:120000, 일반창의미술B:150000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 상현로 103",
     "FA_RDNDA": ", 상가동 206호 (상현동, 상현마을수지센트럴아이파크)",
     "FA_RDNZC": "448727",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20250608"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -8725,33 +8752,6 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
-    "ACA_ASNUM": "3000047150",
-    "ACA_NM": "이레피아노음악교습소",
-    "ESTBL_YMD": "20210602",
-    "REG_YMD": "20210602",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 20,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 5,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "피아노(초급)",
-    "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": "피아노(초급):140000, 피아노(중급):150000, 피아노(고급):160000, 피아노(작품):170000",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 풍덕천로 77",
-    "FA_RDNDA": ", 205호 (풍덕천동, 신정마을상록아파트)",
-    "FA_RDNZC": "16840",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000076766",
     "ACA_NM": "이룸수학교습소",
     "ESTBL_YMD": "20251210",
@@ -9022,6 +9022,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000081915",
+    "ACA_NM": "이화논술교습소",
+    "ESTBL_YMD": "20260514",
+    "REG_YMD": "20260514",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 9,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 풍덕천로 77",
+    "FA_RDNDA": "(풍덕천동)",
+    "FA_RDNZC": "16840",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000011371",
     "ACA_NM": "이화뮤직피아노교습소",
     "ESTBL_YMD": "20110607",
@@ -9043,6 +9070,33 @@
     "FA_RDNZC": "16925",
     "FA_TELNO": "031-307-7502",
     "LOAD_DTM": "20231018"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000082030",
+    "ACA_NM": "이화바이올린교습소",
+    "ESTBL_YMD": "20260527",
+    "REG_YMD": "20260527",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 3,
+    "REALM_SC_NM": "예능(대)",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 풍덕천로 31",
+    "FA_RDNDA": "신정마을 6단지아파트 중심상가 205호(풍덕천동)",
+    "FA_RDNZC": "16844",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -10399,33 +10453,6 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
-    "ACA_ASNUM": "3000039553",
-    "ACA_NM": "초등중등맞춤프로그램YBM영어교습소",
-    "ESTBL_YMD": "20190212",
-    "REG_YMD": "20190212",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 58,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 16,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "영어(초등) ",
-    "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": "영어(초등) :200000, 영어(초등)  :200000, 영어(초등):240000, 영어(중등):260000, 초등(입문):180000, 초등(초급):200000, 초등(중급):220000, 중등(기초):240000, 중등(심화):260000, 영어 초등(입문):180000, 영어 초등(기초):200000, 영어 초등(중급):230000, 영어 중등(기초):250000, 영어 중등(심화):270000, 초등 입문:200000, 초등 기초:220000, 초등 심화:230000, 중등 심화 1:270000, 중등 심화 2:280000, 중등 기초:250000",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 현암로125번길 7",
-    "FA_RDNDA": ", 상가동 203호 (죽전동, 새터마을죽전힐스테이트아파트)",
-    "FA_RDNZC": "16875",
-    "FA_TELNO": "null",
-    "LOAD_DTM": "20250427"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000045259",
     "ACA_NM": "최강창의숲수학교습소",
     "ESTBL_YMD": "20201019",
@@ -10680,16 +10707,16 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 9,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_LIST_NM": "수학(초등A)",
     "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": "수학(초등A):220000, 수학(초등B):210000, 수학(초등C):200000, 수학(중등A):330000, 수학(중등B):320000, 수학(초등F1):190000, 수학(초등G1):200000, 수학(중등A1):250000, 수학(중등B1):240000, 수학(중등C1):320000, 수학(중등D1):310000, 수학(중등E1):320000, 수학(중등F1):310000, 수학(중등G1):240000, 수학(중등H1):310000, 수학(중등I1):320000, 수학(고등A1):350000, 수학(고등B1):340000",
+    "PSNBY_THCC_CNTNT": "수학(초등A):220000, 수학(고등A):370000, 수학(초등B):240000, 수학(초등C):300000, 수학(초등D):400000, 수학(중등C):340000, 수학(중등D):378000, 수학(고등C):500000, 수학(중등A):270000, 수학(중등B):330000, 수학(고등B):380000, 수학(중등E):400000, 수학(중등F):450000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 신봉1로48번길 11",
     "FA_RDNDA": ", 111호 (신봉동, 뉴골드프라자)",
     "FA_RDNZC": "16816",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20240107"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -10847,11 +10874,11 @@
     "PSNBY_THCC_CNTNT": "초등영어:120000",
     "THCC_OTHBC_YN": "N",
     "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 진산로34번길 27",
-    "FA_RDNDA": ", 103호 (풍덕천동,진산마을삼성7차아파트)",
-    "FA_RDNZC": "448170",
+    "FA_RDNMA": "경기도 용인시 수지구 진산로 96",
+    "FA_RDNDA": "진산마을삼성5차아파트 상가1동 206호(풍덕천동)",
+    "FA_RDNZC": "16923",
     "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -11033,14 +11060,14 @@
     "LE_ORD_NM": "예능(중)",
     "LE_CRSE_LIST_NM": "기초-2",
     "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": "기초-2:140000, 기초-3:140000, 기초-5:150000, 중급-1:100000, 중급-2:160000, 중급-3:160000, 고급-1:120000, 고급-2:200000, 초등입시-2:200000, 초등입시-3:240000, 초등입시-4:280000, 중등입시-1:180000, 중등입시-2:250000, 중등입시-3:300000, 고등입시-1:200000, 고등입시-2:300000, 추가콩클반-1:100000, 추가콩클반-2:200000, 추가콩클반-3:300000, 추가콩클반-4:300000, 추가콩클반-5:350000, 기초-4:150000",
+    "PSNBY_THCC_CNTNT": "기초-2:150000, 기초-3:150000, 기초-4:170000, 기초-5:170000, 중급-2:160000, 중급-3:180000, 중급-4:200000, 중급-5:200000, 고급-1:130000, 고급-2:200000, 성인-기초2:150000, 성인-중급1:130000, 성인-중급2:200000, 성인-고급1:150000, 성인-고급2:250000, 초등입시-1:150000, 초등입시-2:200000, 초등입시-3:240000, 초등입시-4:280000, 초등입시-5:320000, 중등입시-1:180000, 중등입시-2:240000, 중등입시-3:300000, 중등입시-4:360000, 중등입시-5:420000, 고등입시-1:200000, 고등입시-2:300000, 고등입시-3:360000, 기초-1:100000, 중급-1:120000, 고등입시-4:420000, 고등입시-5:480000, 추가콩클반-1:130000, 추가콩클반-2:160000, 추가콩클반-3:190000, 추가콩클반-4:220000, 추가콩클반-5:250000",
     "THCC_OTHBC_YN": "N",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 푸른솔로 78",
     "FA_RDNDA": ", 상가동 201호 (죽전동,도담마을 한양수자인)",
     "FA_RDNZC": "448160",
     "FA_TELNO": "031-889-8911",
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -11679,16 +11706,16 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 5,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_LIST_NM": "피아노초급",
     "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": " ",
+    "PSNBY_THCC_CNTNT": "피아노초급:160000, 피아노중급:180000, 피아노고급:200000, 입시:400000, 플루트:200000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 성복1로 13",
     "FA_RDNDA": ", 302호 (성복동, 성복역 롯데캐슬 파크나인)",
     "FA_RDNZC": "16856",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20240421"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -12910,6 +12937,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
+    "ACA_ASNUM": "33369",
+    "ACA_NM": "ANP영어학원",
+    "ESTBL_YMD": "20081209",
+    "REG_YMD": "20081209",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "99991231",
+    "TOFOR_SMTOT": 120,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": "보통교과",
+    "LE_CRSE_LIST_NM": "보습,",
+    "LE_CRSE_NM": "보습",
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "N",
+    "BRHS_ACA_YN": "N",
+    "FA_RDNMA": "경기도 용인시 수지구 탄천상로 19",
+    "FA_RDNDA": "  중앙프라자 205 (죽전동)",
+    "FA_RDNZC": "448805",
+    "FA_TELNO": "031-272-0554",
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "학원",
     "ACA_ASNUM": "3000041268",
     "ACA_NM": "AP독학재수학원",
     "ESTBL_YMD": "20190718",
@@ -13093,33 +13147,6 @@
     "FA_RDNZC": "16930",
     "FA_TELNO": "031-264-0575",
     "LOAD_DTM": "20240310"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000050943",
-    "ACA_NM": "FAS(프리덤아트)미술학원",
-    "ESTBL_YMD": "20220426",
-    "REG_YMD": "20220426",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 130,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 26,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": "미술",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 동천로113번길 22-10",
-    "FA_RDNDA": ", B101호 (동천동)",
-    "FA_RDNZC": "16822",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -13766,8 +13793,8 @@
     "FA_RDNMA": "경기도 용인시 수지구 수지로296번길 51-10",
     "FA_RDNDA": ", 701호 (풍덕천동, 정석빌딩)",
     "FA_RDNZC": "16841",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "FA_TELNO": "null",
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -14190,7 +14217,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 15,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "무용,",
+    "LE_CRSE_LIST_NM": "무용",
     "LE_CRSE_NM": "무용",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "N",
@@ -14199,7 +14226,7 @@
     "FA_RDNDA": ", 202,203호 (죽전동,꽃메마을현대홈타운)",
     "FA_RDNZC": "448160",
     "FA_TELNO": "031-897-4941",
-    "LOAD_DTM": "20231018"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -15725,8 +15752,8 @@
     "REG_STTUS_NM": "개원",
     "CAA_BEGIN_YMD": "        ",
     "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 20,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 20,
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 30,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
     "LE_CRSE_LIST_NM": "보습",
@@ -15735,10 +15762,10 @@
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 수지로 75",
-    "FA_RDNDA": ", 상가동 203호 (상현동, 심곡마을 광교 힐스테이트)",
+    "FA_RDNDA": "(상현동,심곡마을 광교 힐스테이트), 광교힐스테이트상가동 202호, 203호",
     "FA_RDNZC": "16857",
-    "FA_TELNO": "null",
-    "LOAD_DTM": "20251221"
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16089,7 +16116,7 @@
     "FA_RDNDA": ", 203호 (동천동, 동천코아프라자)",
     "FA_RDNZC": "448500",
     "FA_TELNO": "031-262-9509",
-    "LOAD_DTM": "20260308"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16116,7 +16143,7 @@
     "FA_RDNDA": " SR프라자 316호 (상현동)",
     "FA_RDNZC": "448822",
     "FA_TELNO": "031-264-9509",
-    "LOAD_DTM": "20260308"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16143,7 +16170,7 @@
     "FA_RDNDA": ", 402호 (풍덕천동, 성운코아)",
     "FA_RDNZC": "16844",
     "FA_TELNO": "031-266-9109",
-    "LOAD_DTM": "20260308"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16549,33 +16576,6 @@
     "FA_RDNZC": "16875",
     "FA_TELNO": "null",
     "LOAD_DTM": "20250323"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000069282",
-    "ACA_NM": "대치탑클래스영어학원",
-    "ESTBL_YMD": "20240625",
-    "REG_YMD": "20240625",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "        ",
-    "TOFOR_SMTOT": 0,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 60,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": null,
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": null,
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": " ",
-    "FA_RDNMA": "경기도 용인시 수지구 광교중앙로 305",
-    "FA_RDNDA": "(상현동) 광교2차 푸르지오시티 C동 202,214호",
-    "FA_RDNZC": "16944",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20240630"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -17304,7 +17304,7 @@
     "FA_RDNDA": ", 401호 (동천동 동천2지구 B-3-5)",
     "FA_RDNZC": "16824",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20250720"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -17709,7 +17709,7 @@
     "FA_RDNDA": ", 402호 (풍덕천동, 화강빌딩)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-272-9266",
-    "LOAD_DTM": "20260201"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -18951,7 +18951,7 @@
     "FA_RDNDA": "(풍덕천동) 603호",
     "FA_RDNZC": "16841",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260426"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -19761,7 +19761,7 @@
     "FA_RDNDA": ", 212호 (동천동, 수지하우비)",
     "FA_RDNZC": "16828",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260308"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -19842,7 +19842,7 @@
     "FA_RDNDA": ", 4층일부 (풍덕천동,정현석치과)",
     "FA_RDNZC": "448508",
     "FA_TELNO": "031-263-2345",
-    "LOAD_DTM": "20250504"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -21847,33 +21847,6 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000063773",
-    "ACA_NM": "벤자민펫미용학원",
-    "ESTBL_YMD": "20231205",
-    "REG_YMD": "20231205",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "        ",
-    "TOFOR_SMTOT": 0,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 20,
-    "REALM_SC_NM": "직업기술",
-    "LE_ORD_NM": null,
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": null,
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 풍덕천로129번길 6-6",
-    "FA_RDNDA": "(풍덕천동) 7층 전체",
-    "FA_RDNZC": "16837",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231224"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
     "ACA_ASNUM": "3000016180",
     "ACA_NM": "벨르몽드국어독서학원",
     "ESTBL_YMD": "20120828",
@@ -21949,33 +21922,6 @@
     "FA_RDNZC": "16930",
     "FA_TELNO": null,
     "LOAD_DTM": "20231018"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000068101",
-    "ACA_NM": "별빛영어학원",
-    "ESTBL_YMD": "20240307",
-    "REG_YMD": "20240307",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "        ",
-    "TOFOR_SMTOT": 0,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": null,
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": null,
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": " ",
-    "FA_RDNMA": "경기도 용인시 수지구 현암로 141",
-    "FA_RDNDA": "성운코아 301호 (죽전동)",
-    "FA_RDNZC": "16876",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20241103"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -23683,6 +23629,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
+    "ACA_ASNUM": "3000081789",
+    "ACA_NM": "서온재국어학원",
+    "ESTBL_YMD": "20260424",
+    "REG_YMD": "20260424",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 30,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 0,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 성복2로76번길 26-4",
+    "FA_RDNDA": "(성복동,신봉샤르망2)",
+    "FA_RDNZC": "16848",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "학원",
     "ACA_ASNUM": "3000041320",
     "ACA_NM": "설수지학원",
     "ESTBL_YMD": "20190724",
@@ -25053,7 +25026,7 @@
     "FA_RDNDA": ", 2층 일부 (풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-261-0790",
-    "LOAD_DTM": "20240324"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -25242,7 +25215,7 @@
     "FA_RDNDA": "  하나로프라자 603 (풍덕천동)",
     "FA_RDNZC": "448509",
     "FA_TELNO": "031-265-6581",
-    "LOAD_DTM": "20260426"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -26835,7 +26808,7 @@
     "FA_RDNDA": "  4층 전체 (상현동)",
     "FA_RDNZC": "448822",
     "FA_TELNO": "031-265-0582",
-    "LOAD_DTM": "20260426"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -27429,7 +27402,7 @@
     "FA_RDNDA": ", 상가1동 303호 (상현동,수지성원아파트)",
     "FA_RDNZC": "448749",
     "FA_TELNO": "031-265-4112",
-    "LOAD_DTM": "20250413"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -28813,27 +28786,27 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "33369",
-    "ACA_NM": "앤디잉글리쉬학원",
-    "ESTBL_YMD": "20081209",
-    "REG_YMD": "20081209",
+    "ACA_ASNUM": "3000082085",
+    "ACA_NM": "액트투(Act2)뮤지컬학원",
+    "ESTBL_YMD": "20260604",
+    "REG_YMD": "20260604",
     "REG_STTUS_NM": "개원",
     "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 120,
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "보습,",
-    "LE_CRSE_NM": "보습",
+    "REALM_SC_NM": "기예(대)",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
     "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "N",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 탄천상로 19",
-    "FA_RDNDA": "  중앙프라자 205 (죽전동)",
-    "FA_RDNZC": "448805",
-    "FA_TELNO": "031-272-0554",
-    "LOAD_DTM": "20231018"
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 동천로 36",
+    "FA_RDNDA": "(동천동), 영재빌딩 5층 일부",
+    "FA_RDNZC": "16825",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -29208,10 +29181,10 @@
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 만현로 92",
-    "FA_RDNDA": ", 504호, 507호 일부 (상현동, IT 프라자)",
+    "FA_RDNDA": ", 504호 일부, 507호 일부 (상현동, IT 프라자)",
     "FA_RDNZC": "448822",
     "FA_TELNO": "031-548-1622",
-    "LOAD_DTM": "20250720"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -29293,33 +29266,6 @@
     "FA_RDNZC": "16876",
     "FA_TELNO": null,
     "LOAD_DTM": "20251012"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000014430",
-    "ACA_NM": "에땅어린이미술학원",
-    "ESTBL_YMD": "20120308",
-    "REG_YMD": "20120308",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 30,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "미술,",
-    "LE_CRSE_NM": "미술",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "N",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 대지로 18",
-    "FA_RDNDA": ", 3층일부 (죽전동,대지빌딩)",
-    "FA_RDNZC": "448803",
-    "FA_TELNO": "031-263-1697",
-    "LOAD_DTM": "20231018"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -30711,7 +30657,7 @@
     "CAA_BEGIN_YMD": "        ",
     "CAA_END_YMD": "        ",
     "TOFOR_SMTOT": 0,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 30,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
     "LE_CRSE_LIST_NM": "보습",
@@ -30719,11 +30665,11 @@
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 신봉1로 283",
-    "FA_RDNDA": "(신봉동) 2층일부",
-    "FA_RDNZC": "16803",
+    "FA_RDNMA": "경기도 용인시 수지구 성복2로76번길 26-6",
+    "FA_RDNDA": "(성복동,신봉샤르망1), 501호 일부",
+    "FA_RDNZC": "16848",
     "FA_TELNO": null,
-    "LOAD_DTM": "20250202"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -30913,33 +30859,6 @@
     "FA_RDNZC": "16865",
     "FA_TELNO": "031-263-0555",
     "LOAD_DTM": "20240929"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000025088",
-    "ACA_NM": "와와학습코칭센터용인학원",
-    "ESTBL_YMD": "20150422",
-    "REG_YMD": "20150422",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 1648,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 8,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "보습",
-    "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 죽전로 255",
-    "FA_RDNDA": ", 201호 (죽전동, 유토핃아)",
-    "FA_RDNZC": "448808",
-    "FA_TELNO": "02-3668-0512",
-    "LOAD_DTM": "20260426"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -31155,7 +31074,7 @@
     "FA_RDNDA": ", 훼미리프라자 207호 (동천동)",
     "FA_RDNZC": "448120",
     "FA_TELNO": "031-276-0512",
-    "LOAD_DTM": "20250810"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -31318,33 +31237,6 @@
     "FA_RDNZC": "16824",
     "FA_TELNO": null,
     "LOAD_DTM": "20250622"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000016182",
-    "ACA_NM": "원대한교육프라임학원",
-    "ESTBL_YMD": "20120828",
-    "REG_YMD": "20120828",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 24,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 34,
-    "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "보습",
-    "LE_CRSE_NM": "보습",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 신봉1로 84",
-    "FA_RDNDA": ", 403호 (신봉동,신봉종합상가)",
-    "FA_RDNZC": "448833",
-    "FA_TELNO": "031-889-4363",
-    "LOAD_DTM": "20250615"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -32478,7 +32370,7 @@
     "FA_RDNDA": "(상현동)",
     "FA_RDNZC": "16941",
     "FA_TELNO": "031-215-8085",
-    "LOAD_DTM": "20251102"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -32910,7 +32802,7 @@
     "FA_RDNDA": "(상현동), 광교스타천빌딩 501호",
     "FA_RDNZC": "16944",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260412"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -33423,7 +33315,7 @@
     "FA_RDNDA": ", 501호, 502호, 503호 (풍덕천동)",
     "FA_RDNZC": "16837",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20250302"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -33477,7 +33369,7 @@
     "FA_RDNDA": ", 4층 일부 (풍덕천동, 유용빌딩)",
     "FA_RDNZC": "16837",
     "FA_TELNO": null,
-    "LOAD_DTM": "20250601"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -34935,7 +34827,7 @@
     "FA_RDNDA": "수석프라자 902호(풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -34962,7 +34854,7 @@
     "FA_RDNDA": ", 501호, 502호 (풍덕천동, 창진빌딩)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-304-6001",
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -36157,6 +36049,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
+    "ACA_ASNUM": "3000014430",
+    "ACA_NM": "크림핑크미술학원",
+    "ESTBL_YMD": "20120308",
+    "REG_YMD": "20120308",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "99991231",
+    "TOFOR_SMTOT": 30,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 40,
+    "REALM_SC_NM": "예능(대)",
+    "LE_ORD_NM": "예능(중)",
+    "LE_CRSE_LIST_NM": "미술",
+    "LE_CRSE_NM": "미술",
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "N",
+    "BRHS_ACA_YN": "N",
+    "FA_RDNMA": "경기도 용인시 수지구 대지로 18",
+    "FA_RDNDA": ", 3층일부 (죽전동,대지빌딩)",
+    "FA_RDNZC": "448803",
+    "FA_TELNO": "031-263-1697",
+    "LOAD_DTM": "20260607"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "학원",
     "ACA_ASNUM": "9938",
     "ACA_NM": "클라라발레학원",
     "ESTBL_YMD": "20020822",
@@ -36492,7 +36411,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 43,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "보습,",
+    "LE_CRSE_LIST_NM": "보습",
     "LE_CRSE_NM": "보습",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "Y",
@@ -36500,8 +36419,8 @@
     "FA_RDNMA": "경기도 용인시 수지구 문정로 13",
     "FA_RDNDA": ", 802호 (풍덕천동, 중수프라자)",
     "FA_RDNZC": "16841",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "FA_TELNO": "null",
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -36670,33 +36589,6 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "학원",
-    "ACA_ASNUM": "3000018994",
-    "ACA_NM": "트라움뮤직아카데미(Traum Music Academy)학원",
-    "ESTBL_YMD": "20130719",
-    "REG_YMD": "20130719",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 70,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 50,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "음악,",
-    "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "Y",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 현암로 165",
-    "FA_RDNDA": ",  504호 (죽전동,에이스프라자)",
-    "FA_RDNZC": "448808",
-    "FA_TELNO": "031-264-3332",
-    "LOAD_DTM": "20231018"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "학원",
     "ACA_ASNUM": "3000036353",
     "ACA_NM": "트리니티잉글리시어학원",
     "ESTBL_YMD": "20180322",
@@ -36745,6 +36637,33 @@
     "FA_RDNZC": "16943",
     "FA_TELNO": null,
     "LOAD_DTM": "20231018"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "학원",
+    "ACA_ASNUM": "3000081829",
+    "ACA_NM": "티앤에스(T&S)수학학원",
+    "ESTBL_YMD": "20260429",
+    "REG_YMD": "20260429",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 45,
+    "REALM_SC_NM": "입시.검정 및 보습",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 수지로296번길 51-10",
+    "FA_RDNDA": "(풍덕천동), 정석빌딩 602호",
+    "FA_RDNZC": "16841",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -36960,7 +36879,7 @@
     "FA_RDNDA": ", 동천동 592 FPS주건축물제1동 1층~2층 (동천동)",
     "FA_RDNZC": "16802",
     "FA_TELNO": "031-263-2659",
-    "LOAD_DTM": "20231119"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -36987,7 +36906,7 @@
     "FA_RDNDA": ", 2층 (동천동)",
     "FA_RDNZC": "16802",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20231210"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -37419,7 +37338,7 @@
     "FA_RDNDA": "(상현동), 광교우미뉴브 R-126",
     "FA_RDNZC": "16942",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -37518,7 +37437,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 45,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "미술,",
+    "LE_CRSE_LIST_NM": "미술",
     "LE_CRSE_NM": "미술",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "Y",
@@ -37526,8 +37445,8 @@
     "FA_RDNMA": "경기도 용인시 수지구 손곡로 103",
     "FA_RDNDA": ", 4층 전체 (동천동 946-2)",
     "FA_RDNZC": "16822",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "FA_TELNO": "null",
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -37662,7 +37581,7 @@
     "FA_RDNDA": ", 비즈마루빌딩 401-2호(풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -37815,7 +37734,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 20,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "음악,",
+    "LE_CRSE_LIST_NM": "음악",
     "LE_CRSE_NM": "음악",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "Y",
@@ -37824,7 +37743,7 @@
     "FA_RDNDA": ", B 101호 (죽전동)",
     "FA_RDNZC": "16873",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20250907"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -38256,7 +38175,7 @@
     "FA_RDNDA": "(상현동) 203호, 204호",
     "FA_RDNZC": "16930",
     "FA_TELNO": "031-263-5508",
-    "LOAD_DTM": "20260426"
+    "LOAD_DTM": "20260607"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
