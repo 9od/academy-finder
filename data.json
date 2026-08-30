@@ -5987,11 +5987,11 @@
     "PSNBY_THCC_CNTNT": "수학1(초등):50000, 수학7(초등):170000, 수학13(중등):180000, 수학2(초등):60000, 수학8(초등):180000, 수학14(중등):220000, 수학3(초등):70000, 수학9(초등):200000, 수학15(중등):260000, 수학4(초등):100000, 수학10(초등):220000, 수학5(초등):120000, 수학11(초등):250000, 수학6(초등):150000, 수학12(초등):300000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 수지로 325",
-    "FA_RDNDA": ", 동부아파트 상가동 2층 202호 일부 (풍덕천동, 1지구동부아파트)",
-    "FA_RDNZC": "16819",
-    "FA_TELNO": "null",
-    "LOAD_DTM": "20251214"
+    "FA_RDNMA": "경기도 용인시 수지구 수지로342번길 16",
+    "FA_RDNDA": "현대상가 2층 206호(풍덕천동)",
+    "FA_RDNZC": "16838",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -10742,8 +10742,8 @@
     "FA_RDNMA": "경기도 용인시 수지구 용구대로2801번길 15",
     "FA_RDNDA": ", 상가동 204호 (죽전동, 블루밍벽산3단지아파트)",
     "FA_RDNZC": "16865",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "FA_TELNO": "null",
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -12093,7 +12093,7 @@
     "FA_RDNDA": ", 302호 (죽전동, 성운코아)",
     "FA_RDNZC": "16876",
     "FA_TELNO": "031-896-8338",
-    "LOAD_DTM": "20260726"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -13956,7 +13956,7 @@
     "FA_RDNDA": "402호 (죽전동)",
     "FA_RDNZC": "16876",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260712"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -14118,7 +14118,7 @@
     "FA_RDNDA": ", 킴앤코 시티하임 502호,503호 (상현동)",
     "FA_RDNZC": "448130",
     "FA_TELNO": "031-213-2555",
-    "LOAD_DTM": "20250914"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -15810,7 +15810,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 15,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
-    "LE_CRSE_LIST_NM": "보습,",
+    "LE_CRSE_LIST_NM": "보습",
     "LE_CRSE_NM": "보습",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "N",
@@ -15819,7 +15819,7 @@
     "FA_RDNDA": ", 혜명빌딩 3층 일부 (풍덕천동, 혜명빌딩)",
     "FA_RDNZC": "448509",
     "FA_TELNO": "031-262-9241",
-    "LOAD_DTM": "20231018"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16467,7 +16467,7 @@
     "FA_RDNDA": ", 화강빌딩 3층 전체 (풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20260802"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -16494,7 +16494,7 @@
     "FA_RDNDA": ", 가람빌딩 204호 (풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-276-5665",
-    "LOAD_DTM": "20260802"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -18141,7 +18141,7 @@
     "FA_RDNDA": ", 3층 일부 (풍덕천동)",
     "FA_RDNZC": "448505",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260809"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -20666,8 +20666,8 @@
     "REG_STTUS_NM": "개원",
     "CAA_BEGIN_YMD": "        ",
     "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 130,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 35,
+    "TOFOR_SMTOT": 80,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 80,
     "REALM_SC_NM": "입시.검정 및 보습",
     "LE_ORD_NM": "보통교과",
     "LE_CRSE_LIST_NM": "보습,",
@@ -20679,7 +20679,7 @@
     "FA_RDNDA": ", 301호 (풍덕천동)",
     "FA_RDNZC": "16837",
     "FA_TELNO": "031-263-8209",
-    "LOAD_DTM": "20231018"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -24702,7 +24702,7 @@
     "FA_RDNDA": "4층 일부(풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260802"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -30720,10 +30720,10 @@
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 성복2로76번길 26-6",
-    "FA_RDNDA": "(성복동,신봉샤르망1), 501호 일부",
+    "FA_RDNDA": "(성복동,신봉샤르망1), 502호",
     "FA_RDNZC": "16848",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260607"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -32424,7 +32424,7 @@
     "FA_RDNDA": ", 동광프라자 503, 504호 (신봉동)",
     "FA_RDNZC": "16811",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20260405"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -34638,7 +34638,7 @@
     "FA_RDNDA": ", 102호~106호,2층~10층 (풍덕천동)",
     "FA_RDNZC": "16837",
     "FA_TELNO": "031-276-8003",
-    "LOAD_DTM": "20260726"
+    "LOAD_DTM": "20260830"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
