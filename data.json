@@ -2434,6 +2434,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000086086",
+    "ACA_NM": "라뜰리에상상아트미술교습소",
+    "ESTBL_YMD": "20261028",
+    "REG_YMD": "20261028",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 0,
+    "REALM_SC_NM": "예능(대)",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 신봉1로48번길 11",
+    "FA_RDNDA": "뉴골드프라자1 204호(신봉동)",
+    "FA_RDNZC": "16816",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20261101"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000022177",
     "ACA_NM": "라라뮤직피아노교습소",
     "ESTBL_YMD": "20140618",
@@ -4964,8 +4991,8 @@
     "FA_RDNMA": "경기도 용인시 수지구 수풍로 9",
     "FA_RDNDA": ", 상가동 207호 (풍덕천동, 삼성아파트)",
     "FA_RDNZC": "448762",
-    "FA_TELNO": null,
-    "LOAD_DTM": "20231018"
+    "FA_TELNO": "null",
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -6106,33 +6133,6 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
-    "ACA_ASNUM": "17559",
-    "ACA_NM": "숙명피아노교습소",
-    "ESTBL_YMD": "20050712",
-    "REG_YMD": "20050712",
-    "REG_STTUS_NM": "개원",
-    "CAA_BEGIN_YMD": "        ",
-    "CAA_END_YMD": "99991231",
-    "TOFOR_SMTOT": 25,
-    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 4,
-    "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": "피아노(초급)",
-    "LE_CRSE_NM": "음악",
-    "PSNBY_THCC_CNTNT": " ",
-    "THCC_OTHBC_YN": "N",
-    "BRHS_ACA_YN": "N",
-    "FA_RDNMA": "경기도 용인시 수지구 죽전로 244 ",
-    "FA_RDNDA": "현대A 분산상가201호",
-    "FA_RDNZC": "448986",
-    "FA_TELNO": "031-266-0401",
-    "LOAD_DTM": "20240929"
-  },
-  {
-    "ATPT_OFCDC_SC_CODE": "J10",
-    "ATPT_OFCDC_SC_NM": "경기도교육청",
-    "ADMST_ZONE_NM": "용인시",
-    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000031555",
     "ACA_NM": "숲소리음악교습소",
     "ESTBL_YMD": "20161007",
@@ -6575,17 +6575,17 @@
     "TOFOR_SMTOT": 27,
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 9,
     "REALM_SC_NM": "입시.검정 및 보습",
-    "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": null,
-    "LE_CRSE_NM": "미술",
-    "PSNBY_THCC_CNTNT": "미술:160000, 미술:130000, 미술:100000",
+    "LE_ORD_NM": "보통교과",
+    "LE_CRSE_LIST_NM": "영어 초등A",
+    "LE_CRSE_NM": "보습",
+    "PSNBY_THCC_CNTNT": "영어 초등A:220000, 영어 초등B:240000, 영어 초등C:260000, 영어 중등A:300000, 영어 중등B:350000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 손곡로 80",
     "FA_RDNDA": ", 수진마을 써니밸리 아파트 상가동 205호  (동천동)",
     "FA_RDNZC": "16823",
     "FA_TELNO": "031-276-3043",
-    "LOAD_DTM": "20261025"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -8017,6 +8017,33 @@
     "FA_RDNZC": "16930",
     "FA_TELNO": null,
     "LOAD_DTM": "20260705"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "3000086061",
+    "ACA_NM": "온피아노교습소",
+    "ESTBL_YMD": "20261019",
+    "REG_YMD": "20261019",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "        ",
+    "TOFOR_SMTOT": 0,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 5,
+    "REALM_SC_NM": "예능(대)",
+    "LE_ORD_NM": null,
+    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_NM": null,
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "Y",
+    "BRHS_ACA_YN": " ",
+    "FA_RDNMA": "경기도 용인시 수지구 수풍로 9",
+    "FA_RDNDA": "(풍덕천동), 삼성아파트 상가동 202호",
+    "FA_RDNZC": "16818",
+    "FA_TELNO": null,
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -10048,6 +10075,33 @@
     "ATPT_OFCDC_SC_NM": "경기도교육청",
     "ADMST_ZONE_NM": "용인시",
     "ACA_INSTI_SC_NM": "교습소",
+    "ACA_ASNUM": "17559",
+    "ACA_NM": "진피아노교습소",
+    "ESTBL_YMD": "20050712",
+    "REG_YMD": "20050712",
+    "REG_STTUS_NM": "개원",
+    "CAA_BEGIN_YMD": "        ",
+    "CAA_END_YMD": "99991231",
+    "TOFOR_SMTOT": 25,
+    "DTM_RCPTN_ABLTY_NMPR_SMTOT": 4,
+    "REALM_SC_NM": "예능(대)",
+    "LE_ORD_NM": "예능(중)",
+    "LE_CRSE_LIST_NM": "기초반 주2회",
+    "LE_CRSE_NM": "음악",
+    "PSNBY_THCC_CNTNT": " ",
+    "THCC_OTHBC_YN": "N",
+    "BRHS_ACA_YN": "N",
+    "FA_RDNMA": "경기도 용인시 수지구 죽전로 244 ",
+    "FA_RDNDA": "현대A 분산상가201호",
+    "FA_RDNZC": "448986",
+    "FA_TELNO": "031-266-0401",
+    "LOAD_DTM": "20261101"
+  },
+  {
+    "ATPT_OFCDC_SC_CODE": "J10",
+    "ATPT_OFCDC_SC_NM": "경기도교육청",
+    "ADMST_ZONE_NM": "용인시",
+    "ACA_INSTI_SC_NM": "교습소",
     "ACA_ASNUM": "3000035692",
     "ACA_NM": "짱구쌤로봇코딩교습소",
     "ESTBL_YMD": "20180125",
@@ -10409,17 +10463,17 @@
     "TOFOR_SMTOT": 20,
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 5,
     "REALM_SC_NM": "예능(대)",
-    "LE_ORD_NM": null,
-    "LE_CRSE_LIST_NM": "음아A피아노(기초)",
-    "LE_CRSE_NM": null,
-    "PSNBY_THCC_CNTNT": "음아A피아노(기초):140000, 음악A피아노(초급):150000, 음악A피아노(중급):160000, 음악A피아노(고급):170000",
+    "LE_ORD_NM": "예능(중)",
+    "LE_CRSE_LIST_NM": "피아노 기초",
+    "LE_CRSE_NM": "예능(중)",
+    "PSNBY_THCC_CNTNT": "피아노 기초:160000, 피아노 초급:170000, 피아노 중급:180000, 피아노 작품반:190000",
     "THCC_OTHBC_YN": "Y",
     "BRHS_ACA_YN": "N",
     "FA_RDNMA": "경기도 용인시 수지구 광교마을로 90",
     "FA_RDNDA": ", 휴먼시아 41단지 상가동 201호 (상현동)",
     "FA_RDNZC": "448130",
     "FA_TELNO": "031-217-3557",
-    "LOAD_DTM": "20231018"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -10716,7 +10770,7 @@
     "FA_RDNDA": " 성원상떼빌 상가동 202호 (상현동)",
     "FA_RDNZC": "448130",
     "FA_TELNO": "031-265-5529",
-    "LOAD_DTM": "20261018"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -17844,7 +17898,7 @@
     "FA_RDNDA": ", 서초프라자 3층 일부 (풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-276-5665",
-    "LOAD_DTM": "20260201"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -18402,7 +18456,7 @@
     "DTM_RCPTN_ABLTY_NMPR_SMTOT": 20,
     "REALM_SC_NM": "예능(대)",
     "LE_ORD_NM": "예능(중)",
-    "LE_CRSE_LIST_NM": null,
+    "LE_CRSE_LIST_NM": "음악",
     "LE_CRSE_NM": "음악",
     "PSNBY_THCC_CNTNT": " ",
     "THCC_OTHBC_YN": "Y",
@@ -18411,7 +18465,7 @@
     "FA_RDNDA": ", 2층 전체 (풍덕천동)",
     "FA_RDNZC": "16837",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260927"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -21057,7 +21111,7 @@
     "FA_RDNDA": "(풍덕천동,중수프라쟈) 204호",
     "FA_RDNZC": "448509",
     "FA_TELNO": "031-276-7174",
-    "LOAD_DTM": "20261025"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -24567,7 +24621,7 @@
     "FA_RDNDA": ", 한길타운 701,702호 (풍덕천동)",
     "FA_RDNZC": "16837",
     "FA_TELNO": "031-898-1353",
-    "LOAD_DTM": "20260927"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -24594,7 +24648,7 @@
     "FA_RDNDA": "4층 일부(풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "031-262-1353",
-    "LOAD_DTM": "20260927"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -25431,7 +25485,7 @@
     "FA_RDNDA": "4층 일부 2호(풍덕천동)",
     "FA_RDNZC": "16841",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260802"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -28698,7 +28752,7 @@
     "FA_RDNDA": "(동천동), 영재빌딩 5층 일부",
     "FA_RDNZC": "16825",
     "FA_TELNO": null,
-    "LOAD_DTM": "20260913"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
@@ -36285,7 +36339,7 @@
     "FA_RDNDA": ", 802호 (풍덕천동, 중수프라자)",
     "FA_RDNZC": "16841",
     "FA_TELNO": "null",
-    "LOAD_DTM": "20260607"
+    "LOAD_DTM": "20261101"
   },
   {
     "ATPT_OFCDC_SC_CODE": "J10",
